@@ -1,0 +1,28 @@
+package kr.or.iei;
+
+import kr.or.java.FuncClass;
+
+public class HelloJava {
+
+	public static void main(String[] args) {
+		/*실행 단축키 ctrl+f11 (컴파일 및 실행)
+		 code convention(코드문화) 클래스이름 앞에 영어 대문자 + 합성어 일 경우 붙여진 단어 첫번째도 대문자 : 파스칼표기법 PhoneNumber
+		 카멜표기법 합성어 뒤쪽 단어 대문자 : 카멜 표기법 phoneNumber
+		 main<메소드 (public~어쩌구 main 메소드 이름)
+		 다른클래스의 메소드를 실행하는 방법 
+		 클래스 이름 별명 = new 클래스이름();
+		 별명.메소드이름();
+		 Test Class 는 기능제공클래스
+		 Hello java 는 실행클래스
+		 만약 실행하고 싶은 클래스가 실행 클래스랑 다른 패키지에 있으면 
+		 -> import 패키지이름.클래스이름;
+		 */
+		//TestClass tc = new TestClass();
+		//tc.methodName();
+		//tc.testMethod1();
+		FuncClass fc = new FuncClass();
+		fc.hihi();
+		
+	}		
+
+}
