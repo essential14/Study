@@ -1,0 +1,12 @@
+package kr.or.iei.func;
+
+public class Func {
+	public void print1() {
+		System.out.println(1); //정수 1 출력
+		System.out.println(1.0);//실수 1 출력
+		System.out.println('1');//문자 '' 안에 있는것 / 문자 1 출력
+		System.out.println("1");//문자열 "" 안에 있는 것 / 문자열 1출력
+	
+	}
+
+}

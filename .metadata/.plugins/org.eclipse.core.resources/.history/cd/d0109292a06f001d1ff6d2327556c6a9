@@ -1,0 +1,8 @@
+package kr.or.iei.func;
+
+public class Func {
+	public void func() {
+		System.out.println(1);
+	}
+
+}

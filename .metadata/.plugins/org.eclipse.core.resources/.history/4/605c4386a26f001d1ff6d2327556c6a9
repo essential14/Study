@@ -1,0 +1,23 @@
+package kr.or.iei.func;
+
+public class Func {
+	public void print1() {
+		System.out.println(1); //정수 1 출력
+		System.out.println(1.0);//실수 1 출력
+		System.out.println('1');//문자 '' 안에 있는것 / 문자 1 출력
+		System.out.println("1");//문자열 "" 안에 있는 것 / 문자열 1출력
+	}
+	public void print2() {
+		System.out.println(1+1);//2
+		System.out.println(1.0+1.0);//2.0
+		System.out.println('1'+'1');//11 아스키 문자표에 의해 1은 숫자로 49고 더해져서 98 나옴 
+		System.out.println("1"+"1");//11
+		//문자열은 숫자 연산이 아니므로 +이외에는 불가능
+	}	
+	public void print3() { 
+		//자바는 서로 다른 데이터를 연산 불가능
+		//서로 다른 데이터 연산 시 작은 범위 데이터를 큰 범위 데이터로 변환 후 연산
+		System.out.println(1+1.1);
+		//1.0+1.1 = 2.1 -> 범위가 좁은 정수를 실수로 변환 후 연산
+	}
+}

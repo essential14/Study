@@ -1,0 +1,25 @@
+package kr.or.iei.func;
+
+public class Variable {
+	public void var1() {
+		//변수 선언 방법 -> 자료형 변수이름;
+		//1. 논리형 변수 선언(1byte)
+		boolean bool;
+		//2. 문자형 변수 선언(2byte) 
+		char ch;
+		//3. 정수형 변수 선언(byte,shot,int,long) -> 기본 자료형 int
+		byte bNum;
+		short sNum;
+		int iNum;
+		long lNum;
+		//4.실수열 변수 선언 (float, double) -> 기본 자료형 double
+		float fNum;
+		double dNum;
+		//변수를 선언만 하는 경우 쓰레기 값이 들어있어서 바로 사용 불가능
+		//-> 변수를 한 번 초기화(값을 한번은 대입)한 후 사용 가능
+		// a = b -> = 은 대입 연산자 기준으로 오른쪽에 있는 값을 왼쪽에 대입 
+		iNum = 100;
+		System.out.println("iNum :"+iNum);
+	
+	}
+}
