@@ -72,5 +72,44 @@ public class Variable {
 		System.out.printf("dNum : %.3f\n",dNum);//%.뒤에 숫자가 소숫점뒤에 자릿수 나타내고 반올림 / \n은 엔터 : escape 문자
 		System.out.println("hi");
 	}
+	public void exam1() {
+		int num = 100;
+		long numl = 999999999999l;
+		float numf = 486.520f;
+		double numd = 5697.890123d;
+		char ch = 'A';
+		String str = "Hello JAVA";
+		boolean bool = true;
+		System.out.println(num);
+		System.out.println(numl);
+		System.out.println(numf);
+		System.out.println(numd);
+		System.out.println(ch);
+		System.out.println(str);
+		System.out.println(bool);
+	}
+	public void exam2() {
+		String name1 = "홍두깨";
+		String name2 = "고길동";
+		int num1 = 22;
+		int num2 = 50;
+		char ch1 = '남';
+		String rj1 = "서울";
+		String rj2 = "경기도";
+ 		String pnum1 = "01012345678";
+		String pnum2 = "01098765432";
+		String email1 = "myemail@email.com";
+		String email2 = "mrgogo@email.com";
+		
+		System.out.println("이름\t나이\t성별\t지역\t전화번호\t이메일");
+		System.out.println("------------------------------------------------------");
+		System.out.printf("%s\t%d\t%c\t%s\t%s\t%s\n",name1,num1,ch1,rj1,pnum1,email1);
+		System.out.println("------------------------------------------------------");
+		System.out.printf("%s\t%d\t%c\t%s\t%s\t%s\n",name2,num2,ch1,rj2,pnum2,email2);
+		
+		
+	
+		
+	}
 	
 }

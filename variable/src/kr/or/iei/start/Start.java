@@ -9,6 +9,8 @@ public class Start {
 		v.var1();
 		v.var2();
 		v.print();
+		v.exam1();
+		v.exam2();
 	}
 
 }
