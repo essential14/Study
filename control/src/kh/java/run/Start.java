@@ -10,7 +10,7 @@ public class Start {
 	public static void main(String[] args) {
 		
 		ForTest form = new ForTest();
-		form.test5();
+		form.test6();
 		
 	
 
