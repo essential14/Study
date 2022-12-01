@@ -107,10 +107,7 @@ public class Variable {
 		System.out.println("------------------------------------------------------------------");
 		System.out.printf("%s\t%d\t%c\t%s\t%s\t%s\n",name2,num2,ch1,rj2,pnum2,email2);
 	
-		
-	
-	//공유폴더 http://192.168.10.96:18080/%ea%b3%b5%ec%9c%a0%ed%8f%b4%eb%8d%94/
-		
+			
 	}
 	
 }

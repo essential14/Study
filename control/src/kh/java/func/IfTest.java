@@ -120,17 +120,17 @@ public class IfTest {
 	}
 	public void ifph() {
 		Scanner sc = new Scanner(System.in);
+		// adultPay = 15000;
+		// kidspay = 5000; 금액 변수 지정하면 수정 용이
 		System.out.println("====놀이공원 프로그램====");
 		System.out.print("입장하실 총 인원은 몇명입니까? : ");
 		int total=sc.nextInt();
 		System.out.print("어른은 몇명입니까?(1인당 15000원 : ");
 		int adult=sc.nextInt();
 		System.out.print("아이는 몇명입니까?");
-		int kies =sc.nextInt();
-		
-		if(total == adult+kies) {
-			System.out.print("지불하실 총 금액은 "+((adult*15000)+(kies*5000))+"원입니다.");
-		
+		int kids =sc.nextInt();
+		if(total == adult+kids) {
+			System.out.print("지불하실 총 금액은 "+((adult*15000)+(kids*5000))+"원입니다.");
 		}else {
 			System.out.println("인원수가 맞지 않습니다.");
 		}
@@ -140,15 +140,15 @@ public class IfTest {
 		System.out.println("====대/소문자 변환 프로그램====");
 		System.out.print("문자입력 : ");
 		char char1 = sc.next().charAt(0);
+		char cha = (char)(char1-32); //(char)(cha^32)도 가능
+		char cha1 = (char)(char1+32);
 		System.out.println("=====결 과=====");
 		if(char1>96 && char1<123) {
 			System.out.println("소문자를 입력 하였습니다.");
-			char cha = (char)(char1-32);
-			System.out.println(cha);
+			System.out.println("대문자로 변환 : "+cha);
 		}else if(char1>64 && char1<91) {
 			System.out.println("대문자를 입력 하였습니다.");
-			char cha1 = (char)(char1+32);
-			System.out.println(cha1);
+			System.out.println("소문자로 변환 : "+cha1);
 		}else {
 			System.out.println("잘못입력하셨습니다. 영문자를 입력해주세요.");
 		}
@@ -160,16 +160,25 @@ public class IfTest {
 		System.out.print("정수입력 : ");
 		int number34=sc.nextInt();
 		System.out.println("=====결과=====");
-		if(number34%12==0) {
-			System.out.println("[number34]은(는) 3의 배수면서 4의 배수입니다." );	
+		if(number34%12==0) { // 조건이 만족되면 만족 되는 곳에서 나옴
+			System.out.println("["+number34+"]은(는) 3의 배수면서 4의 배수입니다." );	
 		}else if(number34%3==0) {
-			System.out.println("[number34]은(는) 3의 배수입니다.");
-		}else if(number34%4==0) {
-			System.out.println("[number34]은(는) 4의 배수입니다.");
+			System.out.println("["+number34+"]은(는) 3의 배수입니다."); //더 큰 조건이 제일 위 ex)12
+ 		}else if(number34%4==0) {
+			System.out.println("["+number34+"]은(는) 4의 배수입니다.");
 		}else if(number34%12!=0) {
-			System.out.println("[number34]은(는) 3의 배수도 4의 배수도 아닙니다.");
-		}else {
+			System.out.println("["+number34+"]은(는) 3의 배수도 4의 배수도 아닙니다.");
+		}else if(number34==0) { 
 			System.out.println("[0]은(는) 3의 배수도 4의 배수도 아닙니다.");
+			/* 0을 제일 앞에 빼면 편함 
+			 if(num)==0 3의배수아닌거,4의배수아닌거하고 
+			 else { 
+			 if{ 
+			 else if{
+			 }
+			  } 
+			   } */
+		
 		}
 		
 	}
