@@ -58,8 +58,8 @@ public class ForTest {
 		System.out.printf("몇단을 출력하시겠습니까? ");
 		int count = sc.nextInt();
 		System.out.println(count+"단 입니다.");
-		for(int i=0;count<=9 && i<=9;++i) {
-			System.out.printf("%d x %d = %d\n",count,i,count*i);
+		for(int i=0;count<=9 && i<9;i++) {
+			System.out.printf("%d x %d = %d\n",count,i+1,count*(i+1));
 		}
 	}
 
