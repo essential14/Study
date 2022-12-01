@@ -76,7 +76,7 @@ public class Variable {
 		int num = 100;
 		long numl = 999999999999l;
 		float numf = 486.520f;
-		double numd = 5697.890123d;
+		double numd = 5697.890123;
 		char ch = 'A';
 		String str = "Hello JAVA";
 		boolean bool = true;
@@ -101,14 +101,15 @@ public class Variable {
 		String email1 = "myemail@email.com";
 		String email2 = "mrgogo@email.com";
 		
-		System.out.println("이름\t나이\t성별\t지역\t전화번호\t이메일");
-		System.out.println("------------------------------------------------------");
+		System.out.println("이름\t나이\t성별\t지역\t전화번호\t\t이메일");
+		System.out.println("------------------------------------------------------------------");
 		System.out.printf("%s\t%d\t%c\t%s\t%s\t%s\n",name1,num1,ch1,rj1,pnum1,email1);
-		System.out.println("------------------------------------------------------");
+		System.out.println("------------------------------------------------------------------");
 		System.out.printf("%s\t%d\t%c\t%s\t%s\t%s\n",name2,num2,ch1,rj2,pnum2,email2);
-		
+	
 		
 	
+	//공유폴더 http://192.168.10.96:18080/%ea%b3%b5%ec%9c%a0%ed%8f%b4%eb%8d%94/
 		
 	}
 	
